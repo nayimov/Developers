@@ -1,0 +1,28 @@
+{
+  "developersApp": {
+    "career": {
+      "home": {
+        "title": "Careers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Career",
+        "createOrEditLabel": "Create or edit a Career",
+        "notFound": "No Careers found"
+      },
+      "created": "A new Career is created with identifier {{ param }}",
+      "updated": "A Career is updated with identifier {{ param }}",
+      "deleted": "A Career is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Career {{ id }}?"
+      },
+      "detail": {
+        "title": "Career"
+      },
+      "id": "ID",
+      "step": "Step",
+      "description": "Description",
+      "imagePath": "Image Path",
+      "synopsis": "Synopsis",
+      "profile": "Profile"
+    }
+  }
+}

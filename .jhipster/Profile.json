@@ -1,0 +1,124 @@
+{
+  "applications": ["Developers"],
+  "changelogDate": "20230524094525",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "profile",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "64"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "64"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "ProfileStatus",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "AVAILABLE,UNAVAILABLE"
+    },
+    {
+      "fieldName": "avatarPath",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "128"
+    },
+    {
+      "fieldName": "photoPath",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "128"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "512"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["unique", "required", "minlength", "maxlength", "pattern"],
+      "fieldValidateRulesMaxlength": "256",
+      "fieldValidateRulesMinlength": "5",
+      "fieldValidateRulesPattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+    },
+    {
+      "fieldName": "github",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "2048"
+    },
+    {
+      "fieldName": "linkedin",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "2048"
+    },
+    {
+      "fieldName": "twitter",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "2048"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "Long",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "createdDt",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "modifiedBy",
+      "fieldType": "Long",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "modifiedDt",
+      "fieldType": "Instant"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Profile",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "project",
+      "otherEntityRelationshipName": "profile",
+      "relationshipName": "project",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "skill",
+      "otherEntityRelationshipName": "profile",
+      "relationshipName": "skill",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "career",
+      "otherEntityRelationshipName": "profile",
+      "relationshipName": "career",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "interest",
+      "otherEntityRelationshipName": "profile",
+      "relationshipName": "interest",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

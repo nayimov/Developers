@@ -1,0 +1,10 @@
+{
+  "developersApp": {
+    "SkillLevel": {
+      "null": "",
+      "CORE": "CORE",
+      "PROFICIENT": "PROFICIENT",
+      "FAMILIAR": "FAMILIAR"
+    }
+  }
+}

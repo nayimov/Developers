@@ -1,0 +1,47 @@
+{
+  "applications": ["Developers"],
+  "changelogDate": "20230524094725",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "skill",
+  "fields": [
+    {
+      "fieldName": "level",
+      "fieldType": "SkillLevel",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "CORE,PROFICIENT,FAMILIAR"
+    },
+    {
+      "fieldName": "skill",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "64"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "512"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Skill",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "profile",
+      "otherEntityRelationshipName": "skill",
+      "relationshipName": "profile",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "skillCategory",
+      "otherEntityRelationshipName": "skill",
+      "relationshipName": "skillCategory",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

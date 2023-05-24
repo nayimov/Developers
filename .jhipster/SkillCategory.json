@@ -1,0 +1,29 @@
+{
+  "applications": ["Developers"],
+  "changelogDate": "20230524094825",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "skill_category",
+  "fields": [
+    {
+      "fieldName": "category",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "64"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SkillCategory",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "skill",
+      "otherEntityRelationshipName": "skillCategory",
+      "relationshipName": "skill",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

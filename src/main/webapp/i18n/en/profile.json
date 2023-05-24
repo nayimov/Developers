@@ -1,0 +1,41 @@
+{
+  "developersApp": {
+    "profile": {
+      "home": {
+        "title": "Profiles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Profile",
+        "createOrEditLabel": "Create or edit a Profile",
+        "notFound": "No Profiles found"
+      },
+      "created": "A new Profile is created with identifier {{ param }}",
+      "updated": "A Profile is updated with identifier {{ param }}",
+      "deleted": "A Profile is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Profile {{ id }}?"
+      },
+      "detail": {
+        "title": "Profile"
+      },
+      "id": "ID",
+      "name": "Name",
+      "location": "Location",
+      "status": "Status",
+      "avatarPath": "Avatar Path",
+      "photoPath": "Photo Path",
+      "description": "Description",
+      "email": "Email",
+      "github": "Github",
+      "linkedin": "Linkedin",
+      "twitter": "Twitter",
+      "createdBy": "Created By",
+      "createdDt": "Created Dt",
+      "modifiedBy": "Modified By",
+      "modifiedDt": "Modified Dt",
+      "project": "Project",
+      "skill": "Skill",
+      "career": "Career",
+      "interest": "Interest"
+    }
+  }
+}

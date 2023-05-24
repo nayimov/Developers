@@ -1,0 +1,9 @@
+{
+  "developersApp": {
+    "ProfileStatus": {
+      "null": "",
+      "AVAILABLE": "AVAILABLE",
+      "UNAVAILABLE": "UNAVAILABLE"
+    }
+  }
+}
